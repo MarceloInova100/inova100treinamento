@@ -2,12 +2,53 @@
 
 <?= $this->section('content') ?>
 
-<h1>Gestores</h1>
+<div class="d-flex justify-content-between mb-3">
 
-<p>Lista de gestores cadastrados.</p>
+    <h2>Gestores</h2>
 
-<a href="<?= base_url('/gestor/novo') ?>" class="btn btn-primary">
-    Novo Gestor
-</a>
+     ?>"
+       class="btn btn-success">
+        Novo Gestor
+    </a>
+
+</div>
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Perfil</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    <?php foreach($gestores as $gestor): ?>
+
+        <tr>
+
+            <td><?= $gestor['id'] ?></td>
+            <td><?= $gestor['nome'] ?></td>
+            <td><?= $gestor['email'] ?></td>
+            <td><?= $gestor['perfil'] ?></td>
+
+            <td>
+
+                ('gestor/editar/'.$gestor['id']) ?>"
+                    class="btn btn-warning btn-sm">
+                    Editar
+                </a>
+
+            </td>
+
+        </tr>
+
+    <?php endforeach; ?>
+    </tbody>
+
+</table>
 
 <?= $this->endSection() ?>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <head>
     <meta charset="UTF-8">
-    <title>Inova 100 Treinamento</title>
+    <title>Inova 100 - Treinamento</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
