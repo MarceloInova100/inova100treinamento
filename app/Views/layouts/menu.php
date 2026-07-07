@@ -1,23 +1,23 @@
+
 <div class="list-group rounded-0">
 
-    dashboard') ?>"
-       class="list-group-item">
+    <a href="<?= site_url('') ?>
         Dashboard
     </a>
 
-    <?= site_url('gestor') ?> class="list-group-item">
+    gestor') ?>" class="list-group-item">
         Gestores
     </a>
 
-    <?= site_url('participante') ?>-group-item">
+    <?= site_url('participante') ?> class="list-group-item">
         Participantes
     </a>
 
-    <?= site_url('presenca') ?>
+    <a hrefe_url('presenca') ?>-item">
         Presenças
     </a>
 
-    <?= site_url('relatorio') ?>
+    <a href="<rl('relatorio') ?>
         Relatórios
     </a>
 
