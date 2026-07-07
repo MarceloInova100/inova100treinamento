@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestores</title>
-</head>
-<body>
-    h3>Gestores</h3>
-</body>
-</html>
+<?= $this->extend('layouts/main') ?>
+
+<?= $this->section('content') ?>
+
+<h1>Gestores</h1>
+
+<p>Lista de gestores cadastrados.</p>
+
+<a href="<?= base_url('/gestor/novo') ?>" class="btn btn-primary">
+    Novo Gestor
+</a>
+
+<?= $this->endSection() ?>
